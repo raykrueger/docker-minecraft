@@ -5,7 +5,6 @@ RUN apt-get update
 RUN apt-get upgrade -y
 
 RUN apt-get install software-properties-common -y
-RUN apt-get install python-software-properties -y
 
 RUN add-apt-repository ppa:webupd8team/java -y
 RUN apt-get update
