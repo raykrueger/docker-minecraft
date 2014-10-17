@@ -2,7 +2,7 @@ FROM java
 MAINTAINER Ray Krueger <raykrueger@gmail.com>
 
 RUN useradd -s /bin/bash -d /minecraft -m minecraft
-ADD https://s3.amazonaws.com/Minecraft.Download/versions/1.7.9/minecraft_server.1.7.9.jar /minecraft/minecraft_server.jar
+ADD https://s3.amazonaws.com/Minecraft.Download/versions/1.8/minecraft_server.1.8.jar /minecraft/minecraft_server.jar
 RUN chown -R minecraft:minecraft /minecraft
 
 VOLUME /minecraft
