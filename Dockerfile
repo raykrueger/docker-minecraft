@@ -1,12 +1,12 @@
 FROM java
 MAINTAINER Ray Krueger <raykrueger@gmail.com>
 
-ENV MINECRAFT_VERSION=1.8.9
+ENV MINECRAFT_VERSION 1.8.9
 
 RUN mkdir /minecraft
 WORKDIR /minecraft
 
-ADD https://s3.amazonaws.com/Minecraft.Download/versions/${MINECRAFT_VERSION}/minecraft_server.${MINECRAFT_VERSION}.jar /minecraft/minecraft_server.jar
+RUN curl https://s3.amazonaws.com/Minecraft.Download/versions/${MINECRAFT_VERSION}/minecraft_server.${MINECRAFT_VERSION}.jar -o minecraft_server.jar
 
 ONBUILD ADD server.properties /minecraft/server.properties
 
