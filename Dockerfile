@@ -1,7 +1,7 @@
 FROM java
 MAINTAINER Ray Krueger <raykrueger@gmail.com>
 
-ENV MINECRAFT_VERSION 1.8.9
+ENV MINECRAFT_VERSION 1.9.2
 
 RUN mkdir /minecraft
 WORKDIR /minecraft
